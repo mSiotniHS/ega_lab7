@@ -6,7 +6,7 @@ namespace ega_lab7;
 
 public static class GreedyMethod
 {
-	public static IEnumerable<bool> FindSolution(List<Item> items, int capacity)
+	public static IEnumerable<bool> FindSolution(IList<Item> items, int capacity)
 	{
 		var solution = Enumerable.Repeat(false, items.Count).ToArray();
 		var solutionWeight = 0;
