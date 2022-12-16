@@ -1,6 +1,6 @@
 ﻿namespace ega_lab7;
 
-public struct Item
+public readonly struct Item
 {
 	public int Value { get; }
 	public int Weight { get; }
@@ -11,8 +11,5 @@ public struct Item
 		Weight = weight;
 	}
 
-	public override string ToString()
-	{
-		return $"(Value: {Value}, Weight: {Weight})";
-	}
+	public override string ToString() => $"(Value: {Value}, Weight: {Weight})";
 }
